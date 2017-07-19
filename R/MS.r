@@ -11,7 +11,7 @@
 rm(list = ls())
 
 # Set working directory for this session
-setwd("C:/Users/ktobio/Desktop/Jeff/MS_Standalone")
+setwd("C:/Users/ktobio/Desktop/Jeff/MS_Standalone/workspace")
 
 # list working directory and contents: 
 getwd()
@@ -21,12 +21,12 @@ list.files()
 library(haven)
 
 # import Stata .dta file
-msdata.data <- read_dta("Stata/data/MS_collapse_by_tenant_merge_small_18 Jul 2017.dta")
+msdata.data <- read_dta("C:/Users/ktobio/Desktop/Jeff/MS_Standalone/Stata/data/MS_collapse_by_tenant_merge_small_18 Jul 2017.dta")
 
-View(msdata)
+#View(msdata.data)
 
 # open a log file
-filename <- paste0("R/logs/MS_", Sys.Date(), ".log")
+filename <- paste0("C:/Users/ktobio/Desktop/Jeff/MS_Standalone/R/logs/MS_", Sys.Date(), ".log")
 sink(filename)
 
 # use these packages
