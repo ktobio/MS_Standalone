@@ -61,21 +61,21 @@ ftable (mytable) # print table
 install.packages("gmodels")
 library(gmodels)
 help(CrossTable)
-CrossTable(msdata$IndustryGroup,msdata.data$TenantSize, digits=3, max.width = 1, format = c("SPSS"))
+CrossTable(msdata.data$IndustryGroup,msdata.data$TenantSize, digits=3, max.width = 1, format = c("SPSS"))
 
 install.packages("pastecs")
 library(pastecs)
-stat.desc(msdata$UserCount)
-round(stat.desc(msdata$UserCount))
+stat.desc(msdata.data$UserCount)
+round(stat.desc(msdata.data$UserCount))
 
-hist(msdata$internalnetworksize, breaks = "FD")
-hist(msdata$externalnetworksize, breaks = "FD")
+hist(msdata.data$internalnetworksize, breaks = "FD")
+hist(msdata.data$externalnetworksize, breaks = "FD")
 
-plot(msdata$idv, msdata$yr2016gdp_pc)
+plot(msdata.data$idv, msdata.data$yr2016gdp_pc)
 
 install.packages("stargazer") 
 library(stargazer)
-mydata <- msdata
+mydata <- msdata.data
 stargazer(mydata[c("msgSentPerUser", "mtgHoursPerAttendee")], type = "text",
           title="Descriptive statistics/selected variables", digits=1, out="table2.txt")
 
