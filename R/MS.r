@@ -10,7 +10,7 @@
 rm(list = ls())
 
 # Set working directory for this session
-setwd("~/Dropbox/Dashboard")
+setwd("C:/Users/ktobio/Desktop/Jeff/MS_Standalone")
 
 # list working directory and contents: 
 getwd()
@@ -20,7 +20,7 @@ list.files()
 library(haven)
 
 # import Stata .dta file
-msdata <- read_dta("~/Dropbox/Dashboard/data/MS_collapse_by_tenant_merge_13 Jul 2017.dta")
+msdata <- read_dta("~/Stata/data/MS_collapse_by_tenant_merge_18 Jul 2017.dta")
 
 View(msdata)
 
