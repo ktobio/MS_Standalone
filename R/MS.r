@@ -61,7 +61,7 @@ ftable (mytable) # print table
 install.packages("gmodels")
 library(gmodels)
 help(CrossTable)
-CrossTable(msdata$IndustryGroup,msdata$TenantSize, digits=3, max.width = 1, format = c("SPSS"))
+CrossTable(msdata$IndustryGroup,msdata.data$TenantSize, digits=3, max.width = 1, format = c("SPSS"))
 
 install.packages("pastecs")
 library(pastecs)
