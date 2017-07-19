@@ -77,20 +77,20 @@ install.packages("stargazer")
 library(stargazer)
 mydata <- msdata.data
 stargazer(mydata[c("msgSentPerUser", "mtgHoursPerAttendee")], type = "text",
-          title="Descriptive statistics/selected variables", digits=1, out="table2.txt")
+          title="Descriptive statistics/selected variables", digits=1, out="C:/Users/ktobio/Desktop/Jeff/MS_Standalone/R/output/table2.txt")
 
 
 # run a regression / linear model
-fit1 <- lm(lmsgSentPerUser ~ lyr2016gdp_pc, data = msdata)  
+fit1 <- lm(lmsgSentPerUser ~ lyr2016gdp_pc, data = msdata.data)  
 summary(fit1)
-fit2 <- lm(lmsgSentPerUser ~ idv, data = msdata)  
+fit2 <- lm(lmsgSentPerUser ~ idv, data = msdata.data)  
 summary(fit2)
-fit3 <- lm(lmsgSentPerUser ~ lyr2016gdp_pc + idv, data = msdata)  
+fit3 <- lm(lmsgSentPerUser ~ lyr2016gdp_pc + idv, data = msdata.data)  
 summary(fit3)
 stargazer(fit1, fit2, fit3, type = "text")
 
 
-regress lmsgSentPerUser lyr2016gdp_pc idv inddum2-inddum8 sizedum2-sizedum5, cluster(Country)
+#regress lmsgSentPerUser lyr2016gdp_pc idv inddum2-inddum8 sizedum2-sizedum5, cluster(Country)
 
 
 
