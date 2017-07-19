@@ -1,0 +1,319 @@
+
+Data frame:msdata.data	799177 observations and 74 variables    Maximum # NAs:486104
+
+
+                                                                                                         Labels   Storage    NAs
+OmsTenantId                                                                                         OmsTenantId character      0
+IndustryGroup                                                                                                   character      0
+Country                                                                                                         character      0
+TenantSize                                                                                                      character      0
+NumberOfWeeks                                                                               (sum) NumberOfWeeks    double   2316
+UserCount                                                                                      (mean) UserCount    double   2316
+TotalHumanMailboxes                                                                  (mean) TotalHumanMailboxes    double   2316
+internalnetworksize                                    Avg # of distinct internal people a user is connected to    double  29379
+externalnetworksize                                    Avg # of distinct external people a user is connected to    double  29379
+msgSentPerUser                                                                       Avg messages sent per user    double   8330
+mtgHoursPerAttendee                                                              Avg meeting hours per attendee    double  89426
+msgSentLowerQtileVal                                                                (mean) msgSentLowerQtileVal    double  19681
+msgSentUpperQtileVal                                                                (mean) msgSentUpperQtileVal    double 128666
+mtgHoursLowerQtileVal                                                              (mean) mtgHoursLowerQtileVal    double 113842
+mtgHoursUpperQtileVal                                                              (mean) mtgHoursUpperQtileVal    double 394935
+mtgAttendees                                                                                (mean) mtgAttendees    double  89426
+msgSenders                                                                                    (mean) msgSenders    double   8330
+MeanUtilizationHours                                   Spread of hours between 1st email/mtg and last email/mtg    double   2316
+MeanAfterHoursWork                                          Time spent working outside of the standard workday.    double   2316
+yr2015broadband                                             Fixed broadband subscriptions 2015 (per 100 people)    double  15031
+yr2015gdp                                                                          GDP 2015 (constant 2010 US$)    double  16382
+yr2016gdp                                                                          GDP 2016 (constant 2010 US$)    double  17443
+yr2015gdp_pc                                                            GDP per capita 2015 (constant 2010 US$)    double  16382
+yr2016gdp_pc                                                            GDP per capita 2016 (constant 2010 US$)    double  17443
+yr2012gini                                                 GINI index 2012; 0=total equality 1=total inequality    double 486104
+yr2016internet_serv                                          Secure Internet servers 2016(per 1 million people)    double  14926
+yr2015lf_female                                                                      Labor force 2015, % female    double  15131
+yr2013lf_rate                                                            Labor force participation rate 2013, %    double  19233
+yr2015lf_total                                                                          Labor force 2015, total    double  15131
+yr2015mobile                                                 Mobile cellular subscriptions 2015(per 100 people)    double  14926
+yr2016pop                                                                                Population 2016, total    double  14926
+yr2016pop_dens                                          Population density 2016 (people per sq. km of land area    double  14926
+yr2013ratio_f_m                                 Ratio of female to male labor force participation rate (%) 2013    double  22308
+yr2016urban_pop                                                              Urban population 2016 (% of total)    double  14926
+pdi                                                                                    Hofstede: Power Distance    double  30634
+idv                                          Hofstede: Individualism. Higher number = individualism valued more    double  30634
+mas                                                                                       Hofstede: Masculinity    double  30634
+uai                                                                             Hofstede: Uncertainty Avoidance    double  30634
+ltowvs                                                                           Hofstede: Longterm Orientation    double  15706
+ivr                                                                                        Hofstede: Indulgence    double  23502
+sizedum1                                                                             TenantSize==1 - SMB: 1-250    double   2316
+sizedum2                                                          TenantSize==2 - SMS&P (Medium/Small): 250-500    double   2316
+sizedum3                                                         TenantSize==3 - SMS&P (Medium/Large): 500-1000    double   2316
+sizedum4                                                  TenantSize==4 - Corporate Enterprise (EPG): 1000-5000    double   2316
+sizedum5                                                          TenantSize==5 - Major Large Enterprise: 5000+    double   2316
+inddum1                                                                                IndustryGroup==Education    double   2316
+inddum2                                                                                  IndustryGroup==Finance    double   2316
+inddum3                                                                               IndustryGroup==Government    double   2316
+inddum4                                                                            IndustryGroup==Manufacturing    double   2316
+inddum5                                                                    IndustryGroup==Professional Services    double   2316
+inddum6                                                                                   IndustryGroup==Retail    double   2316
+inddum7                                                                               IndustryGroup==Technology    double   2316
+inddum8                                                                                  IndustryGroup==Unknown    double   2316
+lmsgSentPerUser                                                                  Log Avg messages sent per user    double   8330
+lmtgHoursPerAttendee                                                        Log  Avg meeting hours per attendee    double  89954
+lMeanUtilizationHours                              Log Spread of hours between 1st email/mtg and last email/mtg    double  17169
+lMeanAfterHoursWork                                     Log Time spent working outside of the standard workday.    double 141195
+linternalnetworksize                               Log Avg # of distinct internal people a user is connected to    double  47436
+lexternalnetworksize                               Log Avg # of distinct external people a user is connected to    double  32804
+lyr2015broadband                                        Log Fixed broadband subscriptions 2015 (per 100 people)    double  15031
+lyr2015gdp                                                                     Log GDP 2015 (constant 2010 US$)    double  16382
+lyr2015gdp_pc                                                       Log GDP per capita 2015 (constant 2010 US$)    double  16382
+lyr2016gdp                                                                      Log GDP 2016(constant 2010 US$)    double  17443
+lyr2016gdp_pc                                                       Log GDP per capita 2016 (constant 2010 US$)    double  17443
+lyr2015mobile                                           Log Mobile cellular subscriptions 2015 (per 100 people)    double  14926
+lyr2016internet_serv                                     Log Secure Internet servers 2016(per 1 million people)    double  14926
+lyr2015lf_total                                                                     Log Labor force 2015, total    double  15131
+lyr2016pop                                                                           Log Population 2016, total    double  14926
+lyr2016pop_dens                                      Log Population density 2016(people per sq. km of land area    double  14926
+Tightness_PLOS                                                      Tightness Score; from Gelfand et al. (2011)    double 141694
+Happiness_Index_PLOS           Happiness Index; World Values Survey & ASEP/JDS (Various years); http://www.jdsu    double 141694
+Life_Expectancy_PLOS           Life Expectancy in years (2013); CIA World Factbook; https://www.cia.gov/library    double 141694
+Political_Instability_PLOS     Social Unrest/Political Instability Index; The Economist (2010); http://viewswir    double 141694
+Composite_Score_Wellbeing_PLOS                                    Composite Score of all 8 well-being variables    double 141694
+# A tibble: 5 × 74
+                           OmsTenantId         IndustryGroup        Country     TenantSize NumberOfWeeks UserCount TotalHumanMailboxes
+                                 <chr>                 <chr>          <chr>          <chr>         <dbl>     <dbl>               <dbl>
+1 00002640-0129-4f33-8bea-3f6bbf00bb68               Unknown         Israel 1 - SMB: 1-250            23  9.304348                  39
+2 00004281-30ba-4246-9d41-c47e3cb26746               Unknown  United States 1 - SMB: 1-250            24 14.416667                  23
+3 000056ab-bc2e-4470-a1f0-e462972fec2f Professional Services         Canada 1 - SMB: 1-250            25 20.880000                  30
+4 00005b58-76a1-4683-9a39-a998ca001c53               Unknown United Kingdom 1 - SMB: 1-250            25 33.000000                  65
+5 0000b1c2-cfae-4956-8b0c-52c6e0062d06 Professional Services         France 1 - SMB: 1-250            25 20.840000                  30
+# ... with 67 more variables: internalnetworksize <dbl>, externalnetworksize <dbl>, msgSentPerUser <dbl>, mtgHoursPerAttendee <dbl>,
+#   msgSentLowerQtileVal <dbl>, msgSentUpperQtileVal <dbl>, mtgHoursLowerQtileVal <dbl>, mtgHoursUpperQtileVal <dbl>, mtgAttendees <dbl>,
+#   msgSenders <dbl>, MeanUtilizationHours <dbl>, MeanAfterHoursWork <dbl>, yr2015broadband <dbl>, yr2015gdp <dbl>, yr2016gdp <dbl>,
+#   yr2015gdp_pc <dbl>, yr2016gdp_pc <dbl>, yr2012gini <dbl>, yr2016internet_serv <dbl>, yr2015lf_female <dbl>, yr2013lf_rate <dbl>,
+#   yr2015lf_total <dbl>, yr2015mobile <dbl>, yr2016pop <dbl>, yr2016pop_dens <dbl>, yr2013ratio_f_m <dbl>, yr2016urban_pop <dbl>, pdi <dbl>,
+#   idv <dbl>, mas <dbl>, uai <dbl>, ltowvs <dbl>, ivr <dbl>, sizedum1 <dbl>, sizedum2 <dbl>, sizedum3 <dbl>, sizedum4 <dbl>, sizedum5 <dbl>,
+#   inddum1 <dbl>, inddum2 <dbl>, inddum3 <dbl>, inddum4 <dbl>, inddum5 <dbl>, inddum6 <dbl>, inddum7 <dbl>, inddum8 <dbl>, lmsgSentPerUser <dbl>,
+#   lmtgHoursPerAttendee <dbl>, lMeanUtilizationHours <dbl>, lMeanAfterHoursWork <dbl>, linternalnetworksize <dbl>, lexternalnetworksize <dbl>,
+#   lyr2015broadband <dbl>, lyr2015gdp <dbl>, lyr2015gdp_pc <dbl>, lyr2016gdp <dbl>, lyr2016gdp_pc <dbl>, lyr2015mobile <dbl>,
+#   lyr2016internet_serv <dbl>, lyr2015lf_total <dbl>, lyr2016pop <dbl>, lyr2016pop_dens <dbl>, Tightness_PLOS <dbl>, Happiness_Index_PLOS <dbl>,
+#   Life_Expectancy_PLOS <dbl>, Political_Instability_PLOS <dbl>, Composite_Score_Wellbeing_PLOS <dbl>
+Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	799177 obs. of  74 variables:
+ $ OmsTenantId                   : atomic  00002640-0129-4f33-8bea-3f6bbf00bb68 00004281-30ba-4246-9d41-c47e3cb26746 000056ab-bc2e-4470-a1f0-e462972fec2f 00005b58-76a1-4683-9a39-a998ca001c53 ...
+  ..- attr(*, "label")= chr "OmsTenantId"
+  ..- attr(*, "format.stata")= chr "%36s"
+ $ IndustryGroup                 : atomic  Unknown Unknown Professional Services Unknown ...
+  ..- attr(*, "format.stata")= chr "%21s"
+ $ Country                       : atomic  Israel United States Canada United Kingdom ...
+  ..- attr(*, "format.stata")= chr "%52s"
+ $ TenantSize                    : atomic  1 - SMB: 1-250 1 - SMB: 1-250 1 - SMB: 1-250 1 - SMB: 1-250 ...
+  ..- attr(*, "format.stata")= chr "%41s"
+ $ NumberOfWeeks                 : atomic  23 24 25 25 25 25 25 25 19 25 ...
+  ..- attr(*, "label")= chr "(sum) NumberOfWeeks"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ UserCount                     : atomic  9.3 14.4 20.9 33 20.8 ...
+  ..- attr(*, "label")= chr "(mean) UserCount"
+  ..- attr(*, "format.stata")= chr "%12.0g"
+ $ TotalHumanMailboxes           : atomic  39 23 30 65 30 50 83 33 26 25 ...
+  ..- attr(*, "label")= chr "(mean) TotalHumanMailboxes"
+  ..- attr(*, "format.stata")= chr "%12.0g"
+ $ internalnetworksize           : atomic  1.33 4.37 6.72 10.02 14.53 ...
+  ..- attr(*, "label")= chr "Avg # of distinct internal people a user is connected to"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ externalnetworksize           : atomic  1.83 10.16 10.34 16.23 21.39 ...
+  ..- attr(*, "label")= chr "Avg # of distinct external people a user is connected to"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ msgSentPerUser                : atomic  1.2 21.7 21 27 37.9 ...
+  ..- attr(*, "label")= chr "Avg messages sent per user"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ mtgHoursPerAttendee           : atomic  1.16 2.48 5.13 2.11 1.38 ...
+  ..- attr(*, "label")= chr "Avg meeting hours per attendee"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ msgSentLowerQtileVal          : atomic  1.2 1.9 1.9 2.24 2.47 ...
+  ..- attr(*, "label")= chr "(mean) msgSentLowerQtileVal"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ msgSentUpperQtileVal          : atomic  NaN 65.2 66.5 78.4 76.7 ...
+  ..- attr(*, "label")= chr "(mean) msgSentUpperQtileVal"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ mtgHoursLowerQtileVal         : atomic  0.666 0.73 0.988 0.817 1 ...
+  ..- attr(*, "label")= chr "(mean) mtgHoursLowerQtileVal"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ mtgHoursUpperQtileVal         : atomic  NaN 11.7 10.5 9.5 NaN ...
+  ..- attr(*, "label")= chr "(mean) mtgHoursUpperQtileVal"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ mtgAttendees                  : atomic  9.64 7 18.18 5.35 1.25 ...
+  ..- attr(*, "label")= chr "(mean) mtgAttendees"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ msgSenders                    : atomic  1.2 13.3 15.2 32.8 20.8 ...
+  ..- attr(*, "label")= chr "(mean) msgSenders"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ MeanUtilizationHours          : atomic  0.648 5.146 4.608 3.994 5.349 ...
+  ..- attr(*, "label")= chr "Spread of hours between 1st email/mtg and last email/mtg"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ MeanAfterHoursWork            : atomic  1.055173 0.378307 0.109068 0.033733 0.000736 ...
+  ..- attr(*, "label")= chr "Time spent working outside of the standard workday."
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ yr2015broadband               : atomic  27.4 31 36.3 38.6 41.3 ...
+  ..- attr(*, "label")= chr "Fixed broadband subscriptions 2015 (per 100 people)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2015gdp                     : atomic  2.78e+11 1.66e+13 1.80e+12 2.68e+12 2.78e+12 ...
+  ..- attr(*, "label")= chr "GDP 2015 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016gdp                     : atomic  2.89e+11 1.69e+13 1.82e+12 2.73e+12 2.81e+12 ...
+  ..- attr(*, "label")= chr "GDP 2016 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2015gdp_pc                  : atomic  33118 51722 50110 41184 41690 ...
+  ..- attr(*, "label")= chr "GDP per capita 2015 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016gdp_pc                  : atomic  33783 52195 50232 41603 42013 ...
+  ..- attr(*, "label")= chr "GDP per capita 2016 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2012gini                    : atomic  NaN NaN NaN 32.6 33.1 ...
+  ..- attr(*, "label")= chr "GINI index 2012; 0=total equality 1=total inequality"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016internet_serv           : atomic  293 1623 1253 1408 849 ...
+  ..- attr(*, "label")= chr "Secure Internet servers 2016(per 1 million people)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2015lf_female               : atomic  47 45.8 47.2 46.4 47.7 ...
+  ..- attr(*, "label")= chr "Labor force 2015, % female"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2013lf_rate                 : atomic  63.7 63.2 66.5 62.6 56.5 ...
+  ..- attr(*, "label")= chr "Labor force participation rate 2013, %"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2015lf_total                : atomic  3.87e+06 1.62e+08 1.97e+07 3.36e+07 3.00e+07 ...
+  ..- attr(*, "label")= chr "Labor force 2015, total"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2015mobile                  : atomic  133 118 83 124 103 ...
+  ..- attr(*, "label")= chr "Mobile cellular subscriptions 2015(per 100 people)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016pop                     : atomic  8.55e+06 3.23e+08 3.63e+07 6.56e+07 6.69e+07 ...
+  ..- attr(*, "label")= chr "Population 2016, total"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016pop_dens                : atomic  394.97 35.32 3.99 271.31 122.17 ...
+  ..- attr(*, "label")= chr "Population density 2016 (people per sq. km of land area"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2013ratio_f_m               : atomic  83.9 82 87.7 82.5 84 ...
+  ..- attr(*, "label")= chr "Ratio of female to male labor force participation rate (%) 2013"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ yr2016urban_pop               : atomic  92.2 81.8 82 82.8 79.8 ...
+  ..- attr(*, "label")= chr "Urban population 2016 (% of total)"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ pdi                           : atomic  13 40 39 35 68 40 67 35 40 57 ...
+  ..- attr(*, "label")= chr "Hofstede: Power Distance"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ idv                           : atomic  54 91 80 89 71 91 13 89 91 51 ...
+  ..- attr(*, "label")= chr "Hofstede: Individualism. Higher number = individualism valued more"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ mas                           : atomic  47 62 52 66 43 62 64 66 62 42 ...
+  ..- attr(*, "label")= chr "Hofstede: Masculinity"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ uai                           : atomic  81 46 48 35 86 46 80 35 46 86 ...
+  ..- attr(*, "label")= chr "Hofstede: Uncertainty Avoidance"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ ltowvs                        : atomic  38 26 36 51 63 26 13 51 26 48 ...
+  ..- attr(*, "label")= chr "Hofstede: Longterm Orientation"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ ivr                           : atomic  NaN 68 68 69 48 68 83 69 68 44 ...
+  ..- attr(*, "label")= chr "Hofstede: Indulgence"
+  ..- attr(*, "format.stata")= chr "%10.0g"
+ $ sizedum1                      : atomic  1 1 1 1 1 1 1 1 1 1 ...
+  ..- attr(*, "label")= chr "TenantSize==1 - SMB: 1-250"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ sizedum2                      : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "TenantSize==2 - SMS&P (Medium/Small): 250-500"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ sizedum3                      : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "TenantSize==3 - SMS&P (Medium/Large): 500-1000"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ sizedum4                      : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "TenantSize==4 - Corporate Enterprise (EPG): 1000-5000"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ sizedum5                      : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "TenantSize==5 - Major Large Enterprise: 5000+"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum1                       : atomic  0 0 0 0 0 0 0 1 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Education"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum2                       : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Finance"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum3                       : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Government"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum4                       : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Manufacturing"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum5                       : atomic  0 0 1 0 1 1 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Professional Services"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum6                       : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Retail"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum7                       : atomic  0 0 0 0 0 0 0 0 0 0 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Technology"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ inddum8                       : atomic  1 1 0 1 0 0 1 0 1 1 ...
+  ..- attr(*, "label")= chr "IndustryGroup==Unknown"
+  ..- attr(*, "format.stata")= chr "%8.0g"
+ $ lmsgSentPerUser               : atomic  0.182 3.078 3.042 3.297 3.636 ...
+  ..- attr(*, "label")= chr "Log Avg messages sent per user"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lmtgHoursPerAttendee          : atomic  0.15 0.907 1.635 0.745 0.318 ...
+  ..- attr(*, "label")= chr "Log  Avg meeting hours per attendee"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lMeanUtilizationHours         : atomic  -0.434 1.638 1.528 1.385 1.677 ...
+  ..- attr(*, "label")= chr "Log Spread of hours between 1st email/mtg and last email/mtg"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lMeanAfterHoursWork           : atomic  0.0537 -0.972 -2.2158 -3.3893 -7.2148 ...
+  ..- attr(*, "label")= chr "Log Time spent working outside of the standard workday."
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ linternalnetworksize          : atomic  0.288 1.475 1.906 2.305 2.676 ...
+  ..- attr(*, "label")= chr "Log Avg # of distinct internal people a user is connected to"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lexternalnetworksize          : atomic  0.606 2.318 2.336 2.787 3.063 ...
+  ..- attr(*, "label")= chr "Log Avg # of distinct external people a user is connected to"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2015broadband              : atomic  3.31 3.43 3.59 3.65 3.72 ...
+  ..- attr(*, "label")= chr "Log Fixed broadband subscriptions 2015 (per 100 people)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2015gdp                    : atomic  26.3 30.4 28.2 28.6 28.7 ...
+  ..- attr(*, "label")= chr "Log GDP 2015 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2015gdp_pc                 : atomic  10.4 10.9 10.8 10.6 10.6 ...
+  ..- attr(*, "label")= chr "Log GDP per capita 2015 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2016gdp                    : atomic  26.4 30.5 28.2 28.6 28.7 ...
+  ..- attr(*, "label")= chr "Log GDP 2016(constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2016gdp_pc                 : atomic  10.4 10.9 10.8 10.6 10.6 ...
+  ..- attr(*, "label")= chr "Log GDP per capita 2016 (constant 2010 US$)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2015mobile                 : atomic  4.89 4.77 4.42 4.82 4.63 ...
+  ..- attr(*, "label")= chr "Log Mobile cellular subscriptions 2015 (per 100 people)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2016internet_serv          : atomic  5.68 7.39 7.13 7.25 6.74 ...
+  ..- attr(*, "label")= chr "Log Secure Internet servers 2016(per 1 million people)"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2015lf_total               : atomic  15.2 18.9 16.8 17.3 17.2 ...
+  ..- attr(*, "label")= chr "Log Labor force 2015, total"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2016pop                    : atomic  16 19.6 17.4 18 18 ...
+  ..- attr(*, "label")= chr "Log Population 2016, total"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ lyr2016pop_dens               : atomic  5.98 3.56 1.38 5.6 4.81 ...
+  ..- attr(*, "label")= chr "Log Population density 2016(people per sq. km of land area"
+  ..- attr(*, "format.stata")= chr "%9.0g"
+ $ Tightness_PLOS                : atomic  3.1 5.1 NaN 6.9 6.3 5.1 NaN 6.9 5.1 5.4 ...
+  ..- attr(*, "label")= chr "Tightness Score; from Gelfand et al. (2011)"
+  ..- attr(*, "format.stata")= chr "%14.2f"
+ $ Happiness_Index_PLOS          : atomic  156 186 NaN 187 180 ...
+  ..- attr(*, "label")= chr "Happiness Index; World Values Survey & ASEP/JDS (Various years); http://www.jdsu"
+  ..- attr(*, "format.stata")= chr "%14.2f"
+ $ Life_Expectancy_PLOS          : atomic  81.2 78.6 NaN 80.3 81.6 ...
+  ..- attr(*, "label")= chr "Life Expectancy in years (2013); CIA World Factbook; https://www.cia.gov/library"
+  ..- attr(*, "format.stata")= chr "%14.2f"
+ $ Political_Instability_PLOS    : atomic  5.5 5.3 NaN 4.6 5.3 5.3 NaN 4.6 5.3 5.5 ...
+  ..- attr(*, "label")= chr "Social Unrest/Political Instability Index; The Economist (2010); http://viewswir"
+  ..- attr(*, "format.stata")= chr "%14.2f"
+ $ Composite_Score_Wellbeing_PLOS: atomic  53.6 56.9 NaN 62.3 59 ...
+  ..- attr(*, "label")= chr "Composite Score of all 8 well-being variables"
+  ..- attr(*, "format.stata")= chr "%14.2f"
+[1] "R"         "README.md" "Stata"    

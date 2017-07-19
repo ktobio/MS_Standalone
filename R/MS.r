@@ -1,10 +1,11 @@
-# **********************************************************************************
-#   File        : MS_17July2017.r  
-#   Author      : Jeff Polzer
-#   Created     : 17 July 2017
-#   Modified    : 17 July 2017
-#   Description : .r file for analyzing MS_collapse_by_tenant_merge_13_Jul_2017.RData
-#   **********************************************************************************/
+# *****************************************************************************************
+#   File            : MS_17July2017.r  
+#   Author          : Jeff Polzer
+#   Most Recent Edit: Nina Tobio
+#   Created         : 17 July 2017
+#   Modified        : 19 July 2017
+#   Description     : .r file for analyzing MS_collapse_by_tenant_merge_18_Jul_2017.RData
+#*****************************************************************************************/
 
 # This clears R's data memory so new data can be loaded
 rm(list = ls())
@@ -20,12 +21,13 @@ list.files()
 library(haven)
 
 # import Stata .dta file
-msdata <- read_dta("~/Stata/data/MS_collapse_by_tenant_merge_18 Jul 2017.dta")
+msdata.data <- read_dta("Stata/data/MS_collapse_by_tenant_merge_small_18 Jul 2017.dta")
 
 View(msdata)
 
 # open a log file
-sink(file = "./logs/MS_18July2017", append = FALSE, type = c("output", "message"), split = TRUE)
+filename <- paste0("R/logs/MS_", Sys.Date(), ".log")
+sink(filename)
 
 # use these packages
 
@@ -33,26 +35,26 @@ sink(file = "./logs/MS_18July2017", append = FALSE, type = c("output", "message"
 library(dplyr)
 
 ## install.packages('Hmisc')
-library('Hmisc')
+library(Hmisc)
 
 # The following command lists the contents (including name, type and numbers of variables, as well as
 # number of observations, of the data frame.
-contents(msdata)
+contents(msdata.data)
 
 # The following command lists the first 5 rows of the data frame.
-head(msdata,n=5L)
+head(msdata.data,n=5L)
 
 # provide structure of the dataset
-str(msdata)
+str(msdata.data)
 
-summary(msdata)
+summary(msdata.data)
 
-names(msdata)
+names(msdata.data)
 
-table(msdata$IndustryGroup)
-ftable(msdata$IndustryGroup)
+table(msdata.data$IndustryGroup)
+ftable(msdata.data$IndustryGroup)
 
-mytable <- table(msdata$IndustryGroup, msdata$TenantSize)
+mytable <- table(msdata.data$IndustryGroup, msdata.data$TenantSize)
 mytable # print table
 ftable (mytable) # print table
 
