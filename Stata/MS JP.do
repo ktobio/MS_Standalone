@@ -7,7 +7,7 @@ log using "logs\regression_$S_DATE", replace
 use "data\MS_collapse_by_tenant_merge_18 Jul 2017"
 
 * intraclass correlations
-
+/*
 loneway msgSentPerUser Country
 loneway mtgHoursPerAttendee Country
 loneway MeanUtilization Country
@@ -18,14 +18,14 @@ loneway externalnetworksize Country
 * why is intraclass correlation so much stronger for logged variable?
 
 loneway lmsgSentPerUser Country
-
+*/
 
 
 * Attempting mixed effect models
 
 * these commands took a long time to run and I eventually stopped it
-xtmixed lmsgSentPerUser || _all: R.Country || IndustryGroup:
-xtmixed lmsgSentPerUser || _all: R.Country 
+*xtmixed lmsgSentPerUser || _all: R.Country || IndustryGroup:
+*xtmixed lmsgSentPerUser || _all: R.Country 
 
 
 * trying something simpler
@@ -33,12 +33,31 @@ encode Country, generate(Country2)
 describe Country Country2
 tab Country2
 
+
 regress lmsgSentPerUser sizedum1
+outreg2 using "output\JP_regressions_$S_DATE", excel label replace addtext("Type of Regression","OLS")  
 xtreg lmsgSentPerUser sizedum1, i(Country2) fe
+outreg2 using "output\JP_regressions_$S_DATE", excel label append addtext("Type of Regression","FE")  
 xtreg lmsgSentPerUser sizedum1, i(Country2) re
+outreg2 using "output\JP_regressions_$S_DATE", excel label append addtext("Type of Regression","RE") 
 
-bysort Country: regress lmsgSentPerUser sizedum1
 
+regress lmsgSentPerUser sizedum1
+outreg2 using "output\JP_Countries_$S_DATE", excel label replace addtext("Country","All") 
+
+g counter=1
+bysort Country: egen sum=sum(counter)
+drop if sum<=1
+
+
+*bysort Country: regress lmsgSentPerUser sizedum1
+levelsof Country, local(levels)
+foreach l of local levels {
+regress lmsgSentPerUser sizedum1 if Country=="`l'"
+outreg2 using "output\JP_Countries_$S_DATE", excel label append addtext("Country","`l'") 
+}
+
+stop
 * add more variables to each model
 xtreg lmsgSentPerUser sizedum1, i(Country2) re
 xtreg lmsgSentPerUser lmtgHoursPerAttendee sizedum1, i(Country2) re
