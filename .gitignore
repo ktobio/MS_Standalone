@@ -5,4 +5,5 @@
 /R/logs/
 /R/workspace/
 /R/output/
-
+/R/.RData
+/R/.Rhistory
